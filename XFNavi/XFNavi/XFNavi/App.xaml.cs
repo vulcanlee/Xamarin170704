@@ -12,8 +12,10 @@ namespace XFNavi
         public App()
         {
             InitializeComponent();
+            //App.Current.MainPage = your new mailpage
 
-            MainPage = new NavigationPage( new XFNavi.MainPage());
+            //MainPage = new NavigationPage( new XFNavi.MainPage());
+            MainPage = new XFNavi.P3Page();
         }
 
         protected override void OnStart()
