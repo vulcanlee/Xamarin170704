@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XFNavi"
+             x:Class="XFNavi.MainPage"
+             Title="我是首頁"
+             >
+
+    <Button Text="Go P2" Clicked="Button_Clicked"/>
+
+</ContentPage>
