@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+                  prism:ViewModelLocator.AutowireViewModel="True"
+                  x:Class="XFMasterDetail.Views.MDPage">
+
+    <MasterDetailPage.Master>
+        <ContentPage
+            Title="Menu"
+            >
+            <!--
+            底下的 Icon 要指定的 x:TypeArguments 型別，可以從底下網址查詢到
+            https://developer.xamarin.com/api/type/Xamarin.Forms.ContentPage/
+            -->
+            <ContentPage.Icon>
+                <OnPlatform 
+                    x:TypeArguments="FileImageSource"
+                    iOS="hamburger.png"
+                    Android="hamburger.png"
+                    WinPhone="Assets/hamburger.png"/>
+            </ContentPage.Icon>
+            <StackLayout
+                HorizontalOptions="Fill" VerticalOptions="Start"
+                Margin="0,20,0,0">
+                <Button
+                    Text="P1"
+                    Command="{Binding GoP1Command}"/>
+                <Button
+                    Text="P2"
+                    Command="{Binding GoP2Command}"/>
+                <Button
+                    Text="Home"
+                    Command="{Binding GoHomeCommand}"/>
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+</MasterDetailPage>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="XFCanExecute.Views.MainPage"
+             Title="MainPage">
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <Entry
+            Text="{Binding YourAccount}"
+            Placeholder="請輸入帳號"/>
+        <Label Text="{Binding Title}" />
+        <Button
+            Text="登入"
+            Command="{Binding LoginCommand}"/>
+    </StackLayout>
+</ContentPage>
