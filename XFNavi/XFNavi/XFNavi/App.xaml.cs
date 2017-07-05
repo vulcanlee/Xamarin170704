@@ -13,7 +13,8 @@ namespace XFNavi
         {
             InitializeComponent();
             //App.Current.MainPage = your new mailpage
-
+            //App.Current.Properties["CurrMainPage"] = "P1";
+            //App.Current.SavePropertiesAsync();
             //MainPage = new NavigationPage( new XFNavi.MainPage());
             MainPage = new XFNavi.P3Page();
         }
