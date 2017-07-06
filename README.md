@@ -9,3 +9,5 @@ http://www.accupass.com/go/DCT_106032
 Xamarin.Forms 使用 .NET C# 程式語言，配合豐富資源 BCL 與視覺宣告 XAML語言，搭配地表最強的程式開發工具 Visual Studio，讓您可以一次性開發出可以在 iOS & Android & UWP 下運行的行動裝置應用程式，不論是視覺介面與商業邏輯，開發者也只需要撰寫一次即可，就可以產生出在不同行動裝置下執行的應用程式。另外，Xamarin.Forms 特別適合用於開發企業內部的行動應用。  
 
 本次課程包含超過4個小時的先修錄影課程、 一堂 1 小時的線上課程 與 五天共 35 小時的實體課程，將會帶領大家快速上手 Xamarin.Forms 開發工具，您將會認識 Xamarin 開發環境，了解使用 Xamarin.Forms 開發工具所會遇到問題與解決方法，學會 XAML 與 MVVM 開發和設計模式，實際動手做出可以跨平台執行的應用程式，並且學會整個 Xamarin.Forms 開發過程。
+
+
