@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="XFNaviPara.Views.NextPage"
+             Title="下一頁">
+
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <Label Text="{Binding Title}" />
+        <Label
+            Text="{Binding YourName}"
+            FontSize="20"/>
+        <Label
+            Text="{Binding YourAccount}"
+            FontSize="20"/>
+        <Button
+            Text="回上一頁"
+            Command="{Binding GoBackCommand}"/>
+    </StackLayout>
+
+
+</ContentPage>
