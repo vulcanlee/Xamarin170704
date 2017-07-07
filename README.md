@@ -10,4 +10,54 @@ Xamarin.Forms 使用 .NET C# 程式語言，配合豐富資源 BCL 與視覺宣�
 
 本次課程包含超過4個小時的先修錄影課程、 一堂 1 小時的線上課程 與 五天共 35 小時的實體課程，將會帶領大家快速上手 Xamarin.Forms 開發工具，您將會認識 Xamarin 開發環境，了解使用 Xamarin.Forms 開發工具所會遇到問題與解決方法，學會 XAML 與 MVVM 開發和設計模式，實際動手做出可以跨平台執行的應用程式，並且學會整個 Xamarin.Forms 開發過程。
 
+練習專案說明
+
+Day1
+
+|專案名稱|專案說明|
+|-|-|
+|XFFodyDBinding|資料綁定 Data Binding 的使用 Fody 套件|
+|XFINPC|資料綁定 Data Binding 的自行建置 INotifyPropertyChanged
+|XFMeasureScreen|手機螢幕實際與設計畫素測試專案
+|XFNavi|加入 Properties
+|XFNaviEvent|導航並且接收參數 相關事件
+|XamarinFirst|資料綁定 Data Binding 的自行建置 INotifyPropertyChanged|
+|XFPrismDBinding|資料綁定 Data Binding 的使用 Prism 提供的 BindableBase 類別|
+|||
+
+Day2
+
+|專案名稱|專案說明|
+|-|-|
+|XFCanExecute|命令是否可以執行的綁定|
+|XFCommand|命令綁定與參數|
+|XFDI|自訂可注入相依物件|
+|XFDeepLink|練習情境 深度導航|
+|XFDialog|Prism選擇項目之對話窗|
+|XFNaviPara|頁面導航且傳遞引數|
+|XFPageEvent|子頁面傳回訊息回父頁面|
+|XFPrismNavigation|頁面導航(不透過導航頁面)|
+|XFSimpleNavigation|頁面導航(透過導航頁面)|
+|XFEventCmd|Prism EventToCommandBehavior|
+|XFPageEvent|子頁面傳回訊息回父頁面|
+|||
+
+Day3
+
+|專案名稱|專案說明|
+|-|-|
+|||
+
+Day4
+
+|專案名稱|專案說明|
+|-|-|
+|||
+
+Day5
+
+|專案名稱|專案說明|
+|-|-|
+|||
+
 
