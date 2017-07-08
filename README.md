@@ -40,6 +40,9 @@ Day2
 |XFSimpleNavigation|頁面導航(透過導航頁面)|
 |XFEventCmd|Prism EventToCommandBehavior|
 |XFPageEvent|子頁面傳回訊息回父頁面|
+|XFNaviParaCB|頁面導航且傳遞引數 (後置碼)|
+|||
+|||
 |||
 
 Day3
