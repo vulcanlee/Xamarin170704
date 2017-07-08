@@ -43,7 +43,7 @@ Day2
 |XFNaviParaCB|頁面導航且傳遞引數 (後置碼)|
 |XFDialogCB|選擇項目之對話窗 (後置碼)|
 |XFToolbarItem|導航工具列按鈕練習|
-|||
+|XFNavigationTitle|不同系統平台下，導航頁面的返回按鈕文字問題(試著執行看看問題在哪裡)|
 |||
 |||
 |||
