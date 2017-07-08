@@ -41,6 +41,10 @@ Day2
 |XFEventCmd|Prism EventToCommandBehavior|
 |XFPageEvent|子頁面傳回訊息回父頁面|
 |XFNaviParaCB|頁面導航且傳遞引數 (後置碼)|
+|XFDialogCB|選擇項目之對話窗 (後置碼)|
+|XFToolbarItem|導航工具列按鈕練習|
+|||
+|||
 |||
 |||
 |||
