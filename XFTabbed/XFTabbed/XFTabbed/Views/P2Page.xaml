@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="XFTabbed.Views.P2Page"
+             Title="網頁2">
+
+    <WebView
+        Source="https://www.accupass.com/org/detail/r/1507090942441281249650/1/0"/>
+
+</ContentPage>

@@ -46,7 +46,7 @@ Day2
 |XFNavigationTitle|不同系統平台下，導航頁面的返回按鈕文字問題(試著執行看看問題在哪裡)|
 |NavigationPagePrism|透過 Icommand 資料綁定，自動啟用/停用按鈕(查看原始碼，看看如何做出這樣效果)|
 |XFMasterDetail|導航抽屜頁面導航|
-|||
+|XFTabbed|標籤式頁面之外部 XAML 檔案|
 |||
 
 Day3

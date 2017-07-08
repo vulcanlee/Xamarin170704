@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+            xmlns:OtherPages="clr-namespace:XFTabbed.Views"
+            prism:ViewModelLocator.AutowireViewModel="True"
+            x:Class="XFTabbed.Views.TabPage"
+            Title="首頁">
+
+    <!--<TabbedPage.Children>-->
+        
+   
+    <ContentPage
+        Title="網頁1">
+        <WebView
+            Source="https://www.facebook.com/vulcanlabtw/"/>
+    </ContentPage>
+    <OtherPages:P2Page/>
+    <OtherPages:P3Page/>
+
+    <!--</TabbedPage.Children>-->
+
+</TabbedPage>
