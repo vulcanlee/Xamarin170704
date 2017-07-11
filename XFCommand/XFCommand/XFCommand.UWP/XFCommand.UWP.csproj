@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{60C2D07B-CF8C-4921-9BD6-8ECD0BDB852D}</ProjectGuid>
+    <ProjectGuid>{9D4323D3-3489-4E20-9E75-4EB0F43A5145}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>XFCommand.UWP</RootNamespace>

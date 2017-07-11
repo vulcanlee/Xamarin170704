@@ -8,17 +8,14 @@
     <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
         <Button
             Text="按鈕命令1"
-            Command="{Binding Btn1Command}"
-            CommandParameter="按鈕命令1"
-            />
+            Command="{Binding BtnCommand}"
+            CommandParameter="按鈕命令1"/>
+        
         <Button
             Text="按鈕命令2"
-            Command="{Binding Btn2Command}"
-            CommandParameter="按鈕命令2"
-            />
-        <Label 
-            Text="{Binding Title}"
-            TextColor="{Binding CustomTextColor}"
-            FontSize="24"/>
+            Command="{Binding BtnCommand}"
+            CommandParameter="按鈕命令2"/>
+        
+        <Label Text="{Binding Title}" />
     </StackLayout>
 </ContentPage>
