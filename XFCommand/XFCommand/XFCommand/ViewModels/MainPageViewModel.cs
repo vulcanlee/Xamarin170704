@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using Xamarin.Forms;
 
 namespace XFCommand.ViewModels
 {
@@ -18,12 +19,19 @@ namespace XFCommand.ViewModels
 
         public DelegateCommand<string> BtnCommand { get; set; }
 
+        public DelegateCommand<Button> Btn3Command { get; set; }
+
 
         public MainPageViewModel()
         {
             BtnCommand = new DelegateCommand<string>((x) =>
             {
                 Title = x;
+            });
+
+            Btn3Command = new DelegateCommand<Button>(x =>
+            {
+                Title = $"這是綁定 Button 參數 : {x.Text}";
             });
         }
 
