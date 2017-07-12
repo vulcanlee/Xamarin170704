@@ -35,6 +35,7 @@ Day2
 |XFDeepLink|練習情境 深度導航|
 |XFDialog|Prism選擇項目之對話窗|
 |XFNaviPara|頁面導航且傳遞引數|
+|XFNaviPara1|頁面導航且傳遞引數(有 GoBackAsync傳遞參數練習)|
 |XFPageEvent|子頁面傳回訊息回父頁面|
 |XFPrismNavigation|頁面導航(不透過導航頁面)|
 |XFSimpleNavigation|頁面導航(透過導航頁面)|
