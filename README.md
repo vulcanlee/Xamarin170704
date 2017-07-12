@@ -25,6 +25,8 @@ Day1
 |XFPrismDBinding|資料綁定 Data Binding 的使用 Prism 提供的 BindableBase 類別|
 |||
 
+[Day1 課後作業](https://github.com/vulcanlee/Xamarin170704/blob/master/Homework%20Day1.md)
+
 Day2
 
 |專案名稱|專案說明|
@@ -50,11 +52,15 @@ Day2
 |XFTabbed|標籤式頁面之外部 XAML 檔案|
 |||
 
+[Day2 課後作業](https://github.com/vulcanlee/Xamarin170704/blob/master/Homework%20Day2.md)
+
 Day3
 
 |專案名稱|專案說明|
 |-|-|
 |||
+
+[Day3 課後作業]()
 
 Day4
 
@@ -62,10 +68,14 @@ Day4
 |-|-|
 |||
 
+[Day4 課後作業]()
+
 Day5
 
 |專案名稱|專案說明|
 |-|-|
 |||
+
+[Day5 課後作業]()
 
 
