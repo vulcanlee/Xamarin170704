@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="XFViewHidden.Views.MainPage"
+             Title="MainPage">
+  <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Label Text="文字1" 
+                   IsVisible="{Binding Label1Visible}"/>
+            <Label Text="文字2" 
+                   IsVisible="{Binding Label2Visible}"/>
+        </StackLayout>
+        <Button
+          Text="{Binding Btn1Text}"
+          Command="{Binding Btn1Command}"/>
+        <Button
+          Text="{Binding Btn2Text}"
+          Command="{Binding Btn2Command}"/>
+    </StackLayout>
+</ContentPage>
