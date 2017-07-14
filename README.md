@@ -66,7 +66,7 @@ Day3
 |XFViewHidden|動態顯示/隱藏控制項(按鈕的文字也會隨著狀態而有所變動)|
 |XFScrollView|ScrollView 版面配置練習|
 |XFRelLayout|RelativeLayout Layout|
-|||
+|XFAbsLayout|AbsoluteLayout Layout|
 |||
 |||
 |||
