@@ -50,6 +50,7 @@ Day2
 |NavigationPagePrism|透過 Icommand 資料綁定，自動啟用/停用按鈕(查看原始碼，看看如何做出這樣效果)|
 |XFMasterDetail|導航抽屜頁面導航|
 |XFTabbed|標籤式頁面之外部 XAML 檔案|
+|XFCustVM|自訂ViewModel類別練習|
 |||
 
 [Day2 課後作業](https://github.com/vulcanlee/Xamarin170704/blob/master/Homework%20Day2.md)
@@ -58,6 +59,25 @@ Day3
 
 |專案名稱|專案說明|
 |-|-|
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
 |||
 
 [Day3 課後作業]()

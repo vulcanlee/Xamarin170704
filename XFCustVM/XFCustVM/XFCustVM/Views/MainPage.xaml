@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:localVM="clr-namespace:XFCustVM.ViewModels"
+             prism:ViewModelLocator.AutowireViewModel="False"
+             x:Class="XFCustVM.Views.MainPage"
+             Title="MainPage">
+
+    <!--在這裡指定這個 View 所要用到的 ViewModel 物件-->
+    <!--<localVM:MyCustVM/> 這個標記宣告，將會在 .NET 下執行這樣的程式碼 this.BindingContext = new MyCustVM();-->
+    <ContentPage.BindingContext>
+        <localVM:MyCustVM/>
+    </ContentPage.BindingContext>
+    
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <Label Text="{Binding EventLog}" />
+        <Label Text="{Binding Title}" />
+        <Button
+            Text="Say Hello"
+            Command="{Binding SayHelloCommand}"/>
+    </StackLayout>
+</ContentPage>
