@@ -65,7 +65,7 @@ Day3
 |XFStackLayout|StackLayout 版面配置練習，了解集合資料綁定的個別項目的指定用法|
 |XFViewHidden|動態顯示/隱藏控制項(按鈕的文字也會隨著狀態而有所變動)|
 |XFScrollView|ScrollView 版面配置練習|
-|||
+|XFRelLayout|RelativeLayout Layout|
 |||
 |||
 |||
