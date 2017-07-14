@@ -59,8 +59,8 @@ Day3
 
 |專案名稱|專案說明|
 |-|-|
-|||
-|||
+|XFLayoutOptions|版面配置選項 LayoutOptions對齊 / 延伸 展示範例，供學員執行看看結果|
+|XAMLSamples|XAML版面配置與控制項範例(Charles Petzold 書中範例，請嘗試執行與查看原始碼)|
 |||
 |||
 |||
