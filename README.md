@@ -62,7 +62,7 @@ Day3
 |XFLayoutOptions|版面配置選項 LayoutOptions對齊 / 延伸 展示範例，供學員執行看看結果|
 |XAMLSamples|XAML版面配置與控制項範例(Charles Petzold 書中範例，請嘗試執行與查看原始碼)|
 |XFGrid|Grid 版面配置練習，要設計出RWD效果的頁面|
-|||
+|XFStackLayout|StackLayout 版面配置練習，了解集合資料綁定的個別項目的指定用法|
 |||
 |||
 |||

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="XFStackLayout.Views.MainPage"
+             Title="MainPage">
+
+    <Grid
+        >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackLayout 
+            Orientation="Vertical"
+            HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+            Grid.Row="0">
+
+            <BoxView
+                Color="{Binding ColorList[0]}"
+                HorizontalOptions="Fill"
+                HeightRequest="80"/>
+            <BoxView
+                Color="{Binding ColorList[1]}"
+                HorizontalOptions="Fill"
+                HeightRequest="80"/>
+            <BoxView
+                Color="{Binding ColorList[2]}"
+                HorizontalOptions="Fill"
+                HeightRequest="80"/>
+            <BoxView
+                Color="{Binding ColorList[3]}"
+                HorizontalOptions="Fill"
+                HeightRequest="80"/>
+            <BoxView
+                Color="{Binding ColorList[4]}"
+                HorizontalOptions="Fill"
+                HeightRequest="80"/>
+            <BoxView
+                Color="{Binding ColorList[5]}"
+                HorizontalOptions="Fill"
+                HeightRequest="80"/>
+        </StackLayout>
+        <StackLayout
+            Orientation="Horizontal"
+            HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+            Grid.Row="1">
+            <BoxView
+                Color="{Binding ColorList[0]}"
+                VerticalOptions="Fill"
+                WidthRequest="80"/>
+            <BoxView
+                Color="{Binding ColorList[1]}"
+                VerticalOptions="Fill"
+                WidthRequest="80"/>
+            <BoxView
+                Color="{Binding ColorList[2]}"
+                VerticalOptions="Fill"
+                WidthRequest="80"/>
+            <BoxView
+                Color="{Binding ColorList[3]}"
+                VerticalOptions="Fill"
+                WidthRequest="80"/>
+            <BoxView
+                Color="{Binding ColorList[4]}"
+                VerticalOptions="Fill"
+                WidthRequest="80"/>
+            <BoxView
+                Color="{Binding ColorList[5]}"
+                VerticalOptions="Fill"
+                WidthRequest="80"/>
+        </StackLayout>
+
+    </Grid>
+</ContentPage>
