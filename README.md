@@ -68,7 +68,7 @@ Day3
 |XFRelLayout|RelativeLayout Layout|
 |XFAbsLayout|AbsoluteLayout Layout|
 |XFContentView|使用 ContentView 組合新控制項|
-|||
+|XFEntry|單行文字輸入盒 Entry|
 |||
 |||
 |||
