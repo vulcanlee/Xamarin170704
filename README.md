@@ -69,7 +69,7 @@ Day3
 |XFAbsLayout|AbsoluteLayout Layout|
 |XFContentView|使用 ContentView 組合新控制項|
 |XFEntry|單行文字輸入盒 Entry|
-|||
+|XFWebListView|讀取顯示網路集合資料|
 |||
 |||
 |||

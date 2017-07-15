@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="XFWebListView.Views.MainPage"
+             Title="MainPage">
+    <Grid>
+        <ListView
+            ItemsSource="{Binding 營建署所屬景點活動清單}"  
+            HasUnevenRows="True"
+            >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <Label Text="{Binding orgname}" TextColor="Black" />
+                            <Label Text="{Binding title}" TextColor="Red" />
+                            <Label Text="{Binding description}" TextColor="Green" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        
+        <!--忙碌中的遮罩-->
+        <BoxView
+            HorizontalOptions="Fill" VerticalOptions="Fill"
+            Color="Black"
+            Opacity="0.6"
+            IsVisible="{Binding ShowProcessingMask}"/>
+
+    </Grid>
+</ContentPage>
