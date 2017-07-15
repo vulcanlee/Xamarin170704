@@ -67,7 +67,7 @@ Day3
 |XFScrollView|ScrollView 版面配置練習|
 |XFRelLayout|RelativeLayout Layout|
 |XFAbsLayout|AbsoluteLayout Layout|
-|||
+|XFContentView|使用 ContentView 組合新控制項|
 |||
 |||
 |||

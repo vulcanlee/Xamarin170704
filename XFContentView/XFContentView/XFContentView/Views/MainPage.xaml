@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:userControls="clr-namespace:XFContentView.UserControls"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="XFContentView.Views.MainPage"
+             Title="MainPage">
+    
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <Label Text="{Binding Title}" />
+        <Grid
+            Margin="30,10"
+            >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <userControls:MyButton
+                Grid.Column="0"
+                BindingContext="{Binding DeleteButton}"/>
+            
+            <userControls:MyButton
+                Grid.Column="1"
+                BindingContext="{Binding SaveButton}"/>
+        </Grid>
+    </StackLayout>
+</ContentPage>
