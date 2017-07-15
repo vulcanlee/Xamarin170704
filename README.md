@@ -72,7 +72,8 @@ Day3
 |XFWebListView|讀取顯示網路集合資料|
 |XFListView|集合資料CRUD 顯示資料|
 |XFListView1|集合資料CRUD 模擬情境|
-|||
+|XFListView2|集合資料CRUD 修改與更新|
+|XFListView3|集合資料CRUD 新增記錄|
 |||
 |||
 |||
