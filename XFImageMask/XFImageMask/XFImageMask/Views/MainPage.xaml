@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:localImage="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="XFImageMask.Views.MainPage"
+             Title="MainPage">
+    
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <Label Text="{Binding Title}" />
+        <Image
+            Source="platformImage.jpg"
+            Aspect="AspectFill"
+            WidthRequest="200"
+            HeightRequest="200"
+            />
+
+        <!--要讓圖片被圓形遮罩給修飾，您需要定義額外命名空間(LocalImage)，指向 ImageCircle 這套件的組件，並使用底下方式，顯示在螢幕上-->
+        <localImage:CircleImage
+            Aspect="AspectFill"
+            BorderColor="Green"
+            BorderThickness="5"
+            BackgroundColor="Transparent"
+            WidthRequest="200"
+            HeightRequest="200"
+            >
+            <!--在這裡使用 OnPlatform 來指定出不同平台下的圖片檔案名稱-->
+            <localImage:CircleImage.Source>
+                <OnPlatform x:TypeArguments="ImageSource"
+                            iOS="platformImage.jpg"
+                            Android="platformImage.jpg"
+                            WinPhone="Assets/platformImage.jpg"/>
+            </localImage:CircleImage.Source>
+        </localImage:CircleImage>
+    </StackLayout>
+
+</ContentPage>
