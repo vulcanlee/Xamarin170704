@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:behavior="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
+             xmlns:customControls="clr-namespace:XFCorelPicker.CustomControls"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="XFCorelPicker.Views.MainPage"
+             Title="可綁定Picker的連動練習">
+    
+    <StackLayout
+        Margin="30,0"
+        HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+        
+        <Grid
+            RowSpacing="0" ColumnSpacing="0"
+            >
+            <BoxView
+                Color="Blue"
+                HeightRequest="50"
+                HorizontalOptions="Fill"/>
+            <Label
+                HorizontalOptions="Center" VerticalOptions="Center"
+                Text="使用 XF 2.3.4.x NuGet 套件"
+                TextColor="White"
+                FontSize="26
+                "/>
+        </Grid>
+        <Picker
+            Title="請選擇主分類"
+            SelectedItem="{Binding SelectedMainCategory}"
+            ItemsSource="{Binding MainCategoryList}"
+            TextColor="Red"
+            >
+            <Picker.Behaviors>
+                <behavior:EventToCommandBehavior
+                    EventName="SelectedIndexChanged"
+                    Command="{Binding MainCategoryChangeCommand}"
+                    />
+            </Picker.Behaviors>
+        </Picker>
+        <Picker
+            Title="請選擇次分類"
+            SelectedItem="{Binding SelectedSubCategory}"
+            ItemsSource="{Binding SubCategoryList}"
+            TextColor="Red"
+            />
+
+        <StackLayout
+            Orientation="Horizontal">
+            <Label
+                Text="Picker1 is : "/>
+            <Label
+                Text="{Binding SelectedMainCategory}"/>
+        </StackLayout>
+        <StackLayout
+            Orientation="Horizontal">
+            <Label
+                Text="Picker1 is : "/>
+            <Label
+                Text="{Binding SelectedSubCategory}"/>
+        </StackLayout>
+        
+        
+        
+        
+
+        <Grid
+            RowSpacing="0" ColumnSpacing="0"
+            >
+            <BoxView
+                Color="Red"
+                HeightRequest="50"
+                HorizontalOptions="Fill"/>
+            <Label
+                HorizontalOptions="Center" VerticalOptions="Center"
+                Text="自行擴充的自訂 Picker 控制項"
+                TextColor="White"
+                FontSize="26
+                "/>
+        </Grid>
+        <customControls:BindablePicker
+            Title="請選擇主分類 (自訂 Picker 控制項)"
+            SelectedItem="{Binding CustSelectedMainCategory}"
+            ItemsSource="{Binding CustMainCategoryList}"
+            TextColor="Blue"
+            SelectedItemCommand="{Binding CustMainCategoryChangeCommand}"/>
+        <customControls:BindablePicker
+            Title="請選擇次分類 (自訂 Picker 控制項)"
+            SelectedItem="{Binding CustSelectedSubCategory}"
+            ItemsSource="{Binding CustSubCategoryList}"
+            TextColor="Blue"/>
+
+        <StackLayout
+            Orientation="Horizontal">
+            <Label
+                Text="Picker1 is : "/>
+            <Label
+                Text="{Binding CustSelectedMainCategory}"/>
+        </StackLayout>
+        <StackLayout
+            Orientation="Horizontal">
+            <Label
+                Text="Picker1 is : "/>
+            <Label
+                Text="{Binding CustSelectedSubCategory}"/>
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>

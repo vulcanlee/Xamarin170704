@@ -76,8 +76,8 @@ Day3
 |XFListView3|集合資料CRUD 新增記錄|
 |XFSchedule|挑戰做出好看的頁面|
 |XFCustFont|進階應用 Font Awesome|
-|||
-|||
+|XFIconize|使用Iconize套件，顯示圖示圖片|
+|XFCorelPicker|可綁定Picker的連動練習|
 |||
 |||
 
