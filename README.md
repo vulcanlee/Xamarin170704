@@ -74,8 +74,8 @@ Day3
 |XFListView1|集合資料CRUD 模擬情境|
 |XFListView2|集合資料CRUD 修改與更新|
 |XFListView3|集合資料CRUD 新增記錄|
-|||
-|||
+|XFSchedule|挑戰做出好看的頁面|
+|XFCustFont|進階應用 Font Awesome|
 |||
 |||
 |||
