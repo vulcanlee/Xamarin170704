@@ -43,6 +43,44 @@
                 BackgroundColor="Red"
                 />
 
+
+
+
+            <Label Text="N/A"/>
+            <Image
+                HorizontalOptions="Center" VerticalOptions="Center"
+                WidthRequest="200" HeightRequest="200"
+                Source="xamarinfeaturedV.png"
+                BackgroundColor="Red"
+                />
+
+            <Label Text="AspectFill"/>
+            <Image
+                HorizontalOptions="Center" VerticalOptions="Center"
+                WidthRequest="200" HeightRequest="200"
+                Source="xamarinfeaturedV.png"
+                Aspect="AspectFill"
+                BackgroundColor="Red"
+                />
+
+            <Label Text="AspectFit"/>
+            <Image
+                HorizontalOptions="Center" VerticalOptions="Center"
+                WidthRequest="200" HeightRequest="200"
+                Source="xamarinfeaturedV.png"
+                Aspect="AspectFit"
+                BackgroundColor="Red"
+                />
+
+            <Label Text="Fill"/>
+            <Image
+                HorizontalOptions="Center" VerticalOptions="Center"
+                WidthRequest="200" HeightRequest="200"
+                Source="xamarinfeaturedV.png"
+                Aspect="Fill"
+                BackgroundColor="Red"
+                />
+
         </StackLayout>
 
     </ScrollView>
