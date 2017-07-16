@@ -43,8 +43,10 @@
             <ListView
                 ItemsSource="{Binding Classes}"
                 SelectedItem="{Binding ClassesSelectedItem, Mode=TwoWay}"
-                RowHeight="75"
-                SeparatorVisibility="None">
+                HasUnevenRows="True"
+                SeparatorVisibility="None"
+                BackgroundColor="Transparent"
+                >
 
                 <ListView.Behaviors>
                     <behavior:EventToCommandBehavior
@@ -55,7 +57,8 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Grid ColumnSpacing="0" RowSpacing="0">
+                            <Grid ColumnSpacing="0" RowSpacing="0"
+                                  HeightRequest="75">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="100" />
                                     <ColumnDefinition Width="30" />
