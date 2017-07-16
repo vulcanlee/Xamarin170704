@@ -78,6 +78,11 @@ Day3
 |XFCustFont|進階應用 Font Awesome|
 |XFIconize|使用Iconize套件，顯示圖示圖片|
 |XFCorelPicker|可綁定Picker的連動練習|
+|XFImageAspect|Image 控制項之 Aspect 效果測試|
+|||
+|||
+|||
+|||
 |||
 |||
 
