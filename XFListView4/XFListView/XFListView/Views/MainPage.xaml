@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:behavior="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="XFListView.Views.MainPage"
+             Title="工作清單"
+             x:Name="ThisPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem
+            Text="新增"
+            Command="{Binding AddCommand}"/>
+    </ContentPage.ToolbarItems>
+
+    <Grid
+        RowSpacing="0" ColumnSpacing="0">
+
+        <!--更多 ListView 的可用屬性，可以參考 https://developer.xamarin.com/api/type/Xamarin.Forms.ListView/-->
+        <ListView
+            ItemsSource="{Binding MyTaskItemList}"
+            SelectedItem="{Binding MyTaskItemSelected}"
+            RowHeight="170"
+            IsPullToRefreshEnabled="True"
+            RefreshCommand="{Binding MyTaskRefreshCommand}"
+            IsRefreshing="{Binding RefreshingStatus}"
+            >
+            
+            <!--這裡設定當使用者點選某個項目，需要執行的命令
+            而使用者所點選的項目，可以透過 MyTaskItemSelected 物件得知-->
+
+            <!--這裡為什麼不使用 ItemSelected，而是使用 ItemTapped-->
+            <ListView.Behaviors>
+                <behavior:EventToCommandBehavior
+                    EventName="ItemTapped"
+                    Command="{Binding MyTaskItemSelectedCommand}"/>
+            </ListView.Behaviors>
+            
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout
+                            
+                            Orientation="Vertical">
+                            <Label
+                                Text="{Binding MyTaskName}"
+                                FontSize="20"
+                                TextColor="Pink"/>
+                            <Label
+                                Text="{Binding MyTaskStatus}"
+                                FontSize="16"
+                                TextColor="Blue"/>
+                            <!--這裡使用了 StringFormat 來進行顯示格式轉換-->
+                            <Label
+                                Text="{Binding MyTaskDate, StringFormat='{0:yyyy-MM-dd}'}"
+                                FontSize="14"
+                                TextColor="Green"/>
+                            <Button
+                                Text="刪除"
+                                Command="{Binding BindingContext.DeleteCommand, Source={x:Reference ThisPage}}"
+                                CommandParameter="{Binding}"/>
+                            <Grid
+                                RowSpacing="0" ColumnSpacing="0"
+                                HeightRequest="20"
+                                >
+                                <BoxView
+                                    Color="Blue">
+                                    <BoxView.GestureRecognizers>
+                                        <TapGestureRecognizer 
+                                            Command="{Binding BindingContext.DeleteCommand, Source={x:Reference ThisPage}}"
+                                            CommandParameter="{Binding }"/>
+                                    </BoxView.GestureRecognizers>
+                                </BoxView>
+                                <Label
+                                    Text="刪除"
+                                    TextColor="White"
+                                    HorizontalOptions="Center" VerticalOptions="Center"
+                                    >
+                                    <Label.GestureRecognizers>
+                                        <TapGestureRecognizer 
+                                            Command="{Binding BindingContext.DeleteCommand, Source={x:Reference ThisPage}}"
+                                            CommandParameter="{Binding }"/>
+                                    </Label.GestureRecognizers>
+                                </Label>
+                                <Label
+                                    Text=">"
+                                    TextColor="White"
+                                    HorizontalOptions="End" VerticalOptions="End"
+                                    Margin="0,0,5,5"
+                                    >
+                                    <Label.GestureRecognizers>
+                                        <TapGestureRecognizer 
+                                            Command="{Binding BindingContext.DeleteCommand, Source={x:Reference ThisPage}}"
+                                            CommandParameter="{Binding }"/>
+                                    </Label.GestureRecognizers>
+                                </Label>
+                            </Grid>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+
+</ContentPage>

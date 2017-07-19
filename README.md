@@ -75,6 +75,7 @@ Day3
 |XFListView1|集合資料CRUD 模擬情境|
 |XFListView2|集合資料CRUD 修改與更新|
 |XFListView3|集合資料CRUD 新增記錄|
+|XFListView4|集合資料CRUD 點選刪除|
 |XFSchedule|挑戰做出好看的頁面|
 |XFCustFont|進階應用 Font Awesome|
 |XFIconize|使用Iconize套件，顯示圖示圖片|
@@ -82,7 +83,6 @@ Day3
 |XFImageAspect|Image 控制項之 Aspect 效果測試|
 |XFImage|Image 控制項的功能與特色圖片來源的使用方式/大小與定位問題|
 |XFImageMask|顯示具有圓形遮罩 Mask 的圖片|
-|||
 |||
 |||
 
