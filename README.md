@@ -94,7 +94,7 @@ Day4
 |-|-|
 |XFUserControl|Xamarin.Forms 使用者控制項展示範例(XAML 設計方法說明進階設計準則)|
 |XFStatRes|XAML 靜態資源的使用|
-|||
+|XFDynaRes|XAML 動態資源的使用|
 |||
 |||
 |||
