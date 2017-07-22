@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             
+             xmlns:customControl="clr-namespace:XFBindProp.CustomControls"
+             
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="XFBindProp.Views.MainPage"
+             Title="自訂綁定屬性 Bindable Property">
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <Label Text="{Binding Title}" />
+
+        <!--要使用 DoggyEntry 這個客製控制項，需要在 ContentPage 中，
+        加入一個新的命名空間 xmlns:CustomControl="clr-namespace:BindProp"
+        當要使用這個客製化控制項的時候，需要將命名空間名稱放在控制項名稱前。-->
+
+        <!--現在，先建立的客製控制項，擁有了 EntryType 屬性，透過該屬性，可以產生預設浮水印文字-->
+        <customControl:DoggyEntry EntryType="Email" />
+        <customControl:DoggyEntry EntryType="Phone" />
+        <customControl:DoggyEntry EntryType="Number" />
+    </StackLayout>
+</ContentPage>
