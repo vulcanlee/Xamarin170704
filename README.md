@@ -97,7 +97,7 @@ Day4
 |XFDynaRes|XAML 動態資源的使用|
 |XFResInheritance|XAML 資源字典項目與繼承|
 |XFStyle|XAML 的 樣式 style 應用(線上練習)|
-|MergedDict|XAML 的 樣式 style 應用(用於參考各種不同的樣式用法與檢測在不同情境下發生的應用情況|
+|MergedDict|XAML 的 樣式 style 應用(用於參考各種不同的樣式用法與檢測在不同情境下發生的應用情況)|
 |||
 |||
 |||
