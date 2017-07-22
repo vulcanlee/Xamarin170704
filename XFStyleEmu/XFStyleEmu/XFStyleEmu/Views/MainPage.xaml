@@ -29,9 +29,10 @@
             <Button
                 Grid.Column="0"
                 Text="取消"
-                Style="{StaticResource MyButtonStyle}"
                 BackgroundColor="Red"
-                TextColor="White"/>
+                TextColor="White"
+                Style="{StaticResource MyButtonStyle}"
+                />
         </Grid>
     </StackLayout>
 </ContentPage>
