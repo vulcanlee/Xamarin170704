@@ -101,7 +101,7 @@ Day4
 |MergedDict|XAML 的 樣式 style 應用(用於參考各種不同的樣式用法與檢測在不同情境下發生的應用情況)|
 |XFStyleEmu|儲存帳密的資源/樣式綜合演練(線上測驗，請學員線上實際開發出來)|
 |XFxArray|x:Array 使用範例|
-|||
+|XFValueConverter|數值轉換器 Value Converter|
 |||
 |||
 |||
