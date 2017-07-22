@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="XFStyleEmu.Views.MainPage"
+             Title="MainPage"
+             BackgroundColor="{StaticResource LoginBackgroundColor}"
+             >
+    <StackLayout HorizontalOptions="Fill" VerticalOptions="Center"
+                 Margin="15,0">
+        <Label Text="帳號" />
+        <Entry />
+        <Label Text="帳號" />
+        <Entry TextColor="Red" IsPassword="True" />
+
+        <Grid
+            Margin="0,40,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button
+                Grid.Column="1"
+                Text="儲存"
+                Style="{StaticResource MyButtonStyle}"/>
+
+            <Button
+                Grid.Column="0"
+                Text="取消"
+                Style="{StaticResource MyButtonStyle}"
+                BackgroundColor="Red"
+                TextColor="White"/>
+        </Grid>
+    </StackLayout>
+</ContentPage>
