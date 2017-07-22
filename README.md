@@ -84,6 +84,7 @@ Day3
 |XFImage|Image 控制項的功能與特色圖片來源的使用方式/大小與定位問題|
 |XFImageMask|顯示具有圓形遮罩 Mask 的圖片|
 |XFBindingContext|追蹤頁面項目的 BindingContext|
+|XFDisBack|停用軟體與硬體回上頁按鈕|
 |||
 
 [Day3 課後作業]()
