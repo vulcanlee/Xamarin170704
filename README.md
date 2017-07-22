@@ -104,7 +104,7 @@ Day4
 |XFValueConverter|數值轉換器 Value Converter|
 |XFTransforms|XAML 轉換 (Transforms)|
 |XFBindProp|可綁定屬性 Bindable Properties|
-|||
+|XFAttBehavior|附加行為 Behaviors 應用(Attached Behaviors)|
 |||
 |||
 |||
