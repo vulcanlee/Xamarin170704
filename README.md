@@ -111,7 +111,7 @@ Day4
 |XFTempSel|聊天室 DataTemplateSelector|
 |XFGesPan|手勢移動區塊操作 GestureRecognizer|
 |XFAnimation|動畫 Animations|
-|||
+|XFDataVerify|使用者輸入資料驗證應用|
 |||
 |||
 |||
