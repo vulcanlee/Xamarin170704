@@ -108,7 +108,7 @@ Day4
 |XFFormBehavior|Xamarin.Forms 行為 Behaviors 應用(Xamarin.Forms Behaviors)，可以綁定與卸載控制項的事件|
 |XFAttProp|附加屬性 Attached Properties|
 |XFCustPicker|客製化控制項Custom Control(研究如何繼承原有 Picker 控制項，接著，進行客製設計，產生一個新的控制項出來|
-|||
+|XFTempSel|聊天室 DataTemplateSelector|
 |||
 |||
 |||
