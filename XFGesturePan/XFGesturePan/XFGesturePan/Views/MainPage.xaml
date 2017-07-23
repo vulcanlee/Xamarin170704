@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="XFGesturePan.Views.MainPage"
+             Title="MainPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <x:Double x:Key="MaskOpacity">0.8</x:Double>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <!--將整個螢幕切割成為九個格子，中間的部分為需要看到的部份，其他的部分則為遮罩-->
+    <Grid
+        RowSpacing="0" ColumnSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="{Binding RowTop}" />
+            <RowDefinition Height="{Binding CenterHeight}" />
+            <RowDefinition Height="{Binding RowBottom}" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="{Binding ColumnLeft}"/>
+            <ColumnDefinition Width="{Binding CenterWidth}"/>
+            <ColumnDefinition Width="{Binding ColumnRight}"/>
+        </Grid.ColumnDefinitions>
+
+        <!--這是要擷取的圖片-->
+        <Image
+                x:Name="PhotoImage"
+                Grid.RowSpan="3" Grid.ColumnSpan="3"
+                Aspect="AspectFill"
+                Source="MonoMonkey.jpg">
+            <Image.GestureRecognizers>
+                <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated"/>
+            </Image.GestureRecognizers>
+        </Image>
+        
+        <!--底下的 BoxView，為遮罩部分，遮罩的半透明度，由資源字典來定義-->
+        <BoxView
+                Grid.Row="0" Grid.Column="0"
+                Color="Black"
+                Opacity="{StaticResource MaskOpacity}"
+                VerticalOptions="Fill" HorizontalOptions="Fill"
+                />
+        <BoxView
+                Grid.Row="0" Grid.Column="1"
+                Color="Black"
+                Opacity="{StaticResource MaskOpacity}"
+                VerticalOptions="Fill" HorizontalOptions="Fill"
+                />
+        <BoxView
+                Grid.Row="0" Grid.Column="2"
+                Color="Black"
+                Opacity="{StaticResource MaskOpacity}"
+                VerticalOptions="Fill" HorizontalOptions="Fill"
+                />
+        <BoxView
+                Grid.Row="1" Grid.Column="0"
+                Color="Black"
+                Opacity="{StaticResource MaskOpacity}"
+                VerticalOptions="Fill" HorizontalOptions="Fill"
+                />
+        <BoxView
+                Grid.Row="1" Grid.Column="2"
+                Color="Black"
+                Opacity="{StaticResource MaskOpacity}"
+                VerticalOptions="Fill" HorizontalOptions="Fill"
+                />
+        <BoxView
+                Grid.Row="2" Grid.Column="0"
+                Color="Black"
+                Opacity="{StaticResource MaskOpacity}"
+                VerticalOptions="Fill" HorizontalOptions="Fill"
+                />
+        <BoxView
+                Grid.Row="2" Grid.Column="1"
+                Color="Black"
+                Opacity="{StaticResource MaskOpacity}"
+                VerticalOptions="Fill" HorizontalOptions="Fill"
+                />
+        <BoxView
+                Grid.Row="2" Grid.Column="2"
+                Color="Black"
+                Opacity="{StaticResource MaskOpacity}"
+                VerticalOptions="Fill" HorizontalOptions="Fill"
+                />
+    </Grid>
+</ContentPage>
