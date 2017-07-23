@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             
+             xmlns:attachedProperty="clr-namespace:XFAttProp.AttProperties"
+             
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="XFAttProp.Views.MainPage"
+             Title="自訂附加屬性 Attached Property">
+
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <Label Text="{Binding Title}" />
+
+        <!--沒有使用 自訂附加屬性 的使用方式-->
+        <Label Text="正常下使用 Entry"/>
+        <Entry />
+
+        <!--使用 自訂附加屬性 的使用方式-->
+        <Label Text="有使用附加屬性的 Entry"/>
+        <Entry attachedProperty:EntryTypeAttached.EntryType="Email" />
+        <Entry attachedProperty:EntryTypeAttached.EntryType="Phone" />
+        <Entry attachedProperty:EntryTypeAttached.EntryType="Number" />
+
+        <!--使用一個不存在的附加屬性值，會如何呢?-->
+        <Entry attachedProperty:EntryTypeAttached.EntryType="不存在" />
+    </StackLayout>
+
+</ContentPage>
