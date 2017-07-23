@@ -5,7 +5,7 @@
     <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0CDA80B7-A192-4546-9486-01281E9E7DBC}</ProjectGuid>
+    <ProjectGuid>{CF0ABFAB-56D5-4FDB-82AE-9F336610AE37}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>XFAttBehavior</RootNamespace>

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{A6938378-A385-4D8E-8A5E-061B0397C8ED}</ProjectGuid>
+    <ProjectGuid>{8718A5B1-9BCC-4B9D-9F5A-D528A206F8E2}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>XFAttBehavior.UWP</RootNamespace>

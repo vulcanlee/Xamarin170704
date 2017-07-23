@@ -7,11 +7,11 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="97b39fac-c84c-454d-a14d-259e1519be5b"
+    Name="14a7f09f-be88-431d-9302-5dcf2a04041a"
     Publisher="CN=vulca"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="97b39fac-c84c-454d-a14d-259e1519be5b" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="14a7f09f-be88-431d-9302-5dcf2a04041a" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>XFAttBehavior.UWP</DisplayName>
