@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="XFEllipseView.UserControls.MyBadgeView"
+    xmlns:local="clr-namespace:XFEllipseView.CustomControls">
+    
+    <!--這裡定義一個使用者控制項，定義出一個 徽章 控制項的效果-->
+    <!--這裡，所要做的資料綁定資料來源，將會從頁面的 ViewModel 上取得，而不是在這個使用者控制項來設定-->
+    <ContentView.Content>
+        <Grid>
+            <!--先繪製出一個圓形控制項-->
+            <!--要使用自訂控制項，需要先加入一個 Namespace，才可以 XAML 中指定這個自訂控制項-->
+            <local:EllipseView
+                Grid.Row="0"
+                Color="{Binding BadgeColor}"
+               />
+            <!--接著，在最上方顯示出這個徽章文字-->
+            <Label
+                Text="{Binding BadgeText}"
+                HorizontalOptions="Center" VerticalOptions="Center"
+                TextColor="White"
+                />
+        </Grid>
+    </ContentView.Content>
+</ContentView>

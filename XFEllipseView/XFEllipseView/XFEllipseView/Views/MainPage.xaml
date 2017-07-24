@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:local="clr-namespace:XFEllipseView.CustomControls"
+             xmlns:userControl="clr-namespace:XFEllipseView.UserControls"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="XFEllipseView.Views.MainPage"
+             Title="MainPage"
+             BackgroundColor="Gray"
+             x:Name="ThisPage"
+             >
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <Label Text="{Binding Title}" />
+        <Grid
+            >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="80"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="80"/>
+            </Grid.ColumnDefinitions>
+            <!--在這裡，要引用自訂控制項，需要先宣告命名空間，才能夠使用-->
+            <local:EllipseView
+                Grid.Row="0"
+                Color="#FFF781F3"
+                Opacity="0.9"
+                WidthRequest="80" HeightRequest="80"/>
+            <!--在這裡，要引用自訂控制項，需要先宣告命名空間，才能夠使用-->
+            <local:EllipseView
+                Grid.Row="1"
+                Color="#FFF2F5A9"
+                Opacity="0.1"
+                WidthRequest="80" HeightRequest="80"/>
+        </Grid>
+        <StackLayout
+            Orientation="Horizontal">
+            
+            <!--這個使用者控制項，使用頁面中的 命令，來綁定這個使用者控制項的點擊動作
+            不過，這個使用者控制項的 BindingContext 設定到頁面中的某個屬性，
+            因此，當要綁定手勢點擊事件的時候，需要使用 Source 來切換綁定來源到這個頁面上的 BindingContext
+            這是個很重要的技巧，一定要學會-->
+            <userControl:MyBadgeView 
+                BindingContext="{Binding BadgeViewModel項目}"
+                WidthRequest="50" HeightRequest="50"
+                HorizontalOptions="Center" VerticalOptions="Center"
+                >
+                <userControl:MyBadgeView.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding Path=BindingContext.點選BadgeCommand, Source={x:Reference ThisPage}}" />
+                </userControl:MyBadgeView.GestureRecognizers>
+            </userControl:MyBadgeView>
+        
+            <userControl:MyBadgeView 
+                BindingContext="{Binding BadgeViewModel警告}"
+                WidthRequest="50" HeightRequest="50"
+                HorizontalOptions="Center" VerticalOptions="Center"
+                >
+                <userControl:MyBadgeView.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding Path=BindingContext.點選BadgeCommand, Source={x:Reference ThisPage}}" />
+                </userControl:MyBadgeView.GestureRecognizers>
+            </userControl:MyBadgeView>
+
+            <!--這個使用者控制項，會將當時使用控制項的資料，使用  CommandParameter 傳送到 頁面的 ViewModel 內
+            在頁面中的ViewModel 內，您需要使用 DelegateCommand<BadgeViewModel> 來宣告命令物件-->
+            <userControl:MyBadgeView 
+                BindingContext="{Binding BadgeViewModel項目}"
+                WidthRequest="50" HeightRequest="50"
+                HorizontalOptions="Center" VerticalOptions="Center"
+                >
+                <userControl:MyBadgeView.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding Path=BindingContext.點選Badge帶參數Command, Source={x:Reference ThisPage}}"
+                                          CommandParameter="{Binding}"/>
+                </userControl:MyBadgeView.GestureRecognizers>
+            </userControl:MyBadgeView>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

@@ -115,7 +115,8 @@ Day4
 |XFTriggerDemo|觸發 Trigger 的各種不同使用展示|
 |XFTrigger|使用者登入與觸發應用(多重觸發 Multi Trigger)|
 |XFRendCtrl|進行 Entry 控制項客製化(Renderer)|
-|||
+|XFEntryVerify|使用者控制項 User Control 綜合練習，輸入正確格式文字，會有提示視覺出現|
+|XFEllipseView|客製+使用者控制項綜合應用|
 |||
 
 [Day4 課後作業]()
