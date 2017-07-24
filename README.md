@@ -114,7 +114,7 @@ Day4
 |XFDataVerify|使用者輸入資料驗證應用|
 |XFTriggerDemo|觸發 Trigger 的各種不同使用展示|
 |XFTrigger|使用者登入與觸發應用(多重觸發 Multi Trigger)|
-|||
+|XFRendCtrl|進行 Entry 控制項客製化(Renderer)|
 |||
 |||
 
