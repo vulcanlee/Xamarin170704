@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             
+             xmlns:userControl="clr-namespace:XFUserPanel.UserControls"
+             
+             x:Class="XFUserPanel.UserControls.MyMenuPanel"
+             x:Name="ThisPanel">
+    
+    <ContentView.Content>
+        <StackLayout
+            Spacing="0"
+            Orientation="Horizontal"
+            HorizontalOptions="Fill" VerticalOptions="Fill"
+            BackgroundColor="{Binding PanelColor}"
+            >
+
+            <userControl:MyMenuButton
+                WidthRequest="72"
+                BindingContext="{Binding Button1}"
+                IsVisible="{Binding Path=BindingContext.Button1.ButtonVisible, Source={x:Reference ThisPanel}}"
+                />
+
+            <userControl:MyMenuButton
+                WidthRequest="72"
+                BindingContext="{Binding Button2}"
+                IsVisible="{Binding Path=BindingContext.Button2.ButtonVisible, Source={x:Reference ThisPanel}"
+                />
+
+            <userControl:MyMenuButton
+                WidthRequest="72"
+                BindingContext="{Binding Button3}"
+                IsVisible="{Binding Path=BindingContext.Button3.ButtonVisible, Source={x:Reference ThisPanel}"
+                />
+
+            <userControl:MyMenuButton
+                WidthRequest="72"
+                BindingContext="{Binding Button4}"
+                IsVisible="{Binding Path=BindingContext.Button4.ButtonVisible, Source={x:Reference ThisPanel}"
+                />
+            
+            <userControl:MyMenuButton
+                WidthRequest="72"
+                BindingContext="{Binding Button5}"
+                IsVisible="{Binding Path=BindingContext.Button5.ButtonVisible, Source={x:Reference ThisPanel}"
+                />
+
+            <Button Text="Debug" Clicked="Button_Clicked"/>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>
