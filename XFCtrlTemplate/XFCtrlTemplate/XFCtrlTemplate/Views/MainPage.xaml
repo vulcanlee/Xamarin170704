@@ -8,22 +8,22 @@
              ControlTemplate="{StaticResource DoggyTemplate}">
 
     <Grid 
-                RowSpacing="0" ColumnSpacing="0"
-                HorizontalOptions="Fill" VerticalOptions="Fill">
+        RowSpacing="0" ColumnSpacing="0"
+        HorizontalOptions="Fill" VerticalOptions="Fill">
         <BoxView
-                    Color="Gray"/>
+            Color="Gray"/>
         <Label 
-                    HorizontalOptions="Center" VerticalOptions="Center"
-                    TextColor="White"
-                    FontSize="30"
-                    HorizontalTextAlignment="Center"
-                    Text="{Binding Title}" />
+            HorizontalOptions="Center" VerticalOptions="Center"
+            TextColor="White"
+            FontSize="30"
+            HorizontalTextAlignment="Center"
+            Text="{Binding Title}" />
         <Label 
-                    Margin="0,150,0,0"
-                    HorizontalOptions="Center" VerticalOptions="Center"
-                    TextColor="Red"
-                    FontSize="20"
-                    HorizontalTextAlignment="Center"
-                    Text="灰色區域為頁面主要內容顯示區域" />
+            Margin="0,150,0,0"
+            HorizontalOptions="Center" VerticalOptions="Center"
+            TextColor="Red"
+            FontSize="20"
+            HorizontalTextAlignment="Center"
+            Text="灰色區域為頁面主要內容顯示區域" />
     </Grid>
 </ContentPage>
