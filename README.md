@@ -85,6 +85,7 @@ Day3
 |XFImageMask|顯示具有圓形遮罩 Mask 的圖片|
 |XFBindingContext|追蹤頁面項目的 BindingContext|
 |XFDisBack|停用軟體與硬體回上頁按鈕|
+|XFCtrlTemplate|控制項樣板之應用(客製化 ContentPage頁面)|
 |||
 
 [Day3 課後作業]()
