@@ -120,6 +120,7 @@ Day4
 |XFEllipseView|客製+使用者控制項綜合應用|
 |XFUserPanel|客製按鈕面板應用 2(雙層使用者控制項與 BindingContext 練習)|
 |XFConvertBack|數值轉換器 ConvertBack|
+|XFMoreGesture|擴充其他手勢操作|
 
 [Day4 課後作業]()
 

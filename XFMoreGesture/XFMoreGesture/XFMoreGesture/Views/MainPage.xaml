@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             
+             xmlns:customControl="clr-namespace:XFMoreGesture.CustomControls"
+             
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="XFMoreGesture.Views.MainPage"
+             Title="MainPage">
+
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <Label Text="{Binding Title}" />
+
+        <Label
+            Text="Xamarin.Forms 的 Label"
+            >
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding TapCommand}"/>
+            </Label.GestureRecognizers>
+        </Label>
+        
+        <customControl:FancyLabel
+            Text="具有更多手勢操作的 Label"
+            >
+        </customControl:FancyLabel>
+    </StackLayout>
+
+</ContentPage>
