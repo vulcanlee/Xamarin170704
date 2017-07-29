@@ -119,6 +119,7 @@ Day4
 |XFEntryVerify|使用者控制項 User Control 綜合練習，輸入正確格式文字，會有提示視覺出現|
 |XFEllipseView|客製+使用者控制項綜合應用|
 |XFUserPanel|客製按鈕面板應用 2(雙層使用者控制項與 BindingContext 練習)|
+|XFConvertBack|數值轉換器 ConvertBack|
 
 [Day4 課後作業]()
 
