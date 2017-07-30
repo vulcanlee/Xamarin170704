@@ -88,7 +88,16 @@ namespace XFVisualTree.AttachedProperties
                 {
                     string fooSpace = new string(' ', fooLevel++ * 4);
                     string fooEleType = item.GetType().Name;
-                    Debug.WriteLine($"---------->> {fooSpace}【{fooEleType}】");
+                    string fooEleBCType = "";
+                    if (item.BindingContext != null)
+                    {
+                        fooEleBCType = item.BindingContext.GetType().Name;
+                    }
+                    else
+                    {
+                        fooEleBCType = "null";
+                    }
+                    Debug.WriteLine($"---------->> {fooSpace}【{fooEleType}】 and BindingContext is {fooEleBCType}");
                 }
             }
         }
