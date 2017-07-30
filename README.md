@@ -125,7 +125,7 @@ Day4
 
 [Day4 課後作業]()
 
-HW : XFVisualTree 設計一個輔助除錯的附加屬性；可以隨時得知當時的VisualElement 的 BindingContext 是甚麼類型的物件。
+HW : XFVisualTree 設計一個輔助除錯的附加屬性；可以隨時得知當時的VisualElement 的 BindingContext 是甚麼類型的物件；另外，可以查看這個 Element 的繼承階層架構。
 
 Day5
 

@@ -34,7 +34,9 @@
                 <DataTemplate>
                     <ViewCell>
                         <StackLayout
-                            attachedProperties:BindingContextHelper.GetBindingContextType="{Binding ShowBindingContext}">
+                            attachedProperties:BindingContextHelper.GetBindingContextType="{Binding ShowBindingContext}"
+                            attachedProperties:BindingContextHelper.PrintInheritance="{Binding ShowBindingContext}"
+                            >
                             <Label Text="{Binding Name}"
                                    FontSize="20"
                                    TextColor="Black"/>
