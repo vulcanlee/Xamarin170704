@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+                  prism:ViewModelLocator.AutowireViewModel="True"
+                  x:Class="XFDynamicMenu.Views.MDPage">
+
+    <MasterDetailPage.Master>
+        <ContentPage
+            Title="Menu">
+            <StackLayout
+                Margin="0,40,0,0"
+                >
+                <Button
+                    HorizontalOptions="FillAndExpand" VerticalOptions="Start"
+                    Margin="20,0"
+                    Text="A"
+                    Command="{Binding MenuCommand}"
+                    CommandParameter="A"/>                
+                <Button
+                    HorizontalOptions="FillAndExpand" VerticalOptions="Start"
+                    Margin="40,0,20,0"
+                    Text="A1"
+                    Command="{Binding MenuItemCommand}"
+                    CommandParameter="A1"
+                    IsVisible="{Binding ShowMenuA}"/>   
+                
+                <Button
+                    HorizontalOptions="FillAndExpand" VerticalOptions="Start"
+                    Margin="20,0"
+                    Text="B"
+                    Command="{Binding MenuCommand}"
+                    CommandParameter="B"/>
+                <Button
+                    HorizontalOptions="FillAndExpand" VerticalOptions="Start"
+                    Margin="40,0,20,0"
+                    Text="B1"
+                    Command="{Binding MenuItemCommand}"
+                    CommandParameter="B1"
+                    IsVisible="{Binding ShowMenuB}"/>
+                <Button
+                    HorizontalOptions="FillAndExpand" VerticalOptions="Start"
+                    Margin="40,0,20,0"
+                    Text="B2"
+                    Command="{Binding MenuItemCommand}"
+                    CommandParameter="B2"
+                    IsVisible="{Binding ShowMenuB}"/>
+
+                <Button
+                    HorizontalOptions="FillAndExpand" VerticalOptions="Start"
+                    Margin="40,0,20,0"
+                    Text="B3"
+                    Command="{Binding MenuItemCommand}"
+                    CommandParameter="B3"
+                    IsVisible="{Binding ShowMenuB}"/>
+                
+                <Button
+                    HorizontalOptions="FillAndExpand" VerticalOptions="Start"
+                    Margin="20,0"
+                    Text="C"
+                    Command="{Binding MenuCommand}"
+                    CommandParameter="C"/>
+                <Button
+                    HorizontalOptions="FillAndExpand" VerticalOptions="Start"
+                    Margin="40,0,20,0"
+                    Text="C1"
+                    Command="{Binding MenuItemCommand}"
+                    CommandParameter="C1"
+                    IsVisible="{Binding ShowMenuC}"/>
+                <Button
+                    HorizontalOptions="FillAndExpand" VerticalOptions="Start"
+                    Margin="40,0,20,0"
+                    Text="C2"
+                    Command="{Binding MenuItemCommand}"
+                    CommandParameter="C2"
+                    IsVisible="{Binding ShowMenuC}"/>
+</StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+</MasterDetailPage>

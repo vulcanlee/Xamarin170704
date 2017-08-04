@@ -51,7 +51,7 @@ Day2
 |XFMasterDetail|導航抽屜頁面導航|
 |XFTabbed|標籤式頁面之外部 XAML 檔案|
 |XFCustVM|自訂ViewModel類別練習|
-|||
+|XFDynamicMenu|動態兩階功能表練習|
 
 [Day2 課後作業](https://github.com/vulcanlee/Xamarin170704/blob/master/Homework%20Day2.md)
 
