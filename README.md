@@ -133,6 +133,12 @@ Day5
 |專案名稱|專案說明|
 |-|-|
 |XFFiles|檔案存取與使用|
+|XFAppProp|使用 Properties 來儲存到手機上|
+|||
+|||
+|||
+|||
+|||
 |||
 
 [Day5 課後作業](https://github.com/vulcanlee/Xamarin170704/blob/master/Homework%20Day5.md)
