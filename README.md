@@ -134,7 +134,7 @@ Day5
 |-|-|
 |XFFiles|檔案存取與使用|
 |XFAppProp|使用 Properties 來儲存到手機上|
-|XFPCLFile||
+|XFPCLFile|使用 PCLStorage 儲存到手機上|
 |||
 |||
 |||
