@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:behavior="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="XFCorelPicker2.Views.MainPage"
+             Title="MainPage">
+    
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <Label Text="{Binding Title}" />
+
+        <Label Text="Picker1"/>
+        <Picker
+            ItemsSource="{Binding Picker1Source}"
+            SelectedItem="{Binding Picker1SelectedItem}">
+            <Picker.Behaviors>
+                <behavior:EventToCommandBehavior
+                    EventName="SelectedIndexChanged"
+                    Command="{Binding Picker1SelectedCommand}"/>
+            </Picker.Behaviors>
+        </Picker>
+
+        <Label Text="Picker2"/>
+        <Picker
+            ItemsSource="{Binding Picker2Source}"
+            SelectedItem="{Binding Picker2SelectedItem}">
+            <Picker.Behaviors>
+                <behavior:EventToCommandBehavior
+                    EventName="SelectedIndexChanged"
+                    Command="{Binding Picker2SelectedCommand}"/>
+            </Picker.Behaviors>
+        </Picker>
+
+    </StackLayout>
+</ContentPage>

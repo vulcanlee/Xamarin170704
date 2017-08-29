@@ -81,6 +81,7 @@ Day3
 |XFCustFont|進階應用 Font Awesome|
 |XFIconize|使用Iconize套件，顯示圖示圖片|
 |XFCorelPicker|可綁定Picker的連動練習|
+|XFCorelPicker2|可綁定Picker的連動練習-次清單內容可保留|
 |XFImageAspect|Image 控制項之 Aspect 效果測試|
 |XFImage|Image 控制項的功能與特色圖片來源的使用方式/大小與定位問題|
 |XFImageMask|顯示具有圓形遮罩 Mask 的圖片|
